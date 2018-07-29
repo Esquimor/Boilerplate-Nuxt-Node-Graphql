@@ -1,0 +1,17 @@
+exports.default = module.exports = [`
+  type Library {
+    id: ID
+    name: String
+  }
+
+  extend type Query {
+    library(id: ID): Library
+    librarys: [Library]
+  }
+
+  extend type Mutation {
+    addLibrary(name: String): Library
+    removeLibrary(id: ID): Library
+    updateLibrary(id: ID, name: String): Library
+  }
+`]

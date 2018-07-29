@@ -1,0 +1,6 @@
+query listExercices {
+  exercices{
+    name,
+    id
+  }
+}

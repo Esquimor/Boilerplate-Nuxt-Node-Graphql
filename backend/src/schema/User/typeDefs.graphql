@@ -1,0 +1,18 @@
+module.exports = [`
+  type User {
+    id: ID
+    name: String
+    email: String
+  }
+
+  extend type Query {
+    user(id: ID): User
+    users: [User]
+    me: User
+  }
+
+  extend type Mutation {
+    registerEmail(name: String, email: String, password: String): String
+    login(email: String, password: String): String
+  }
+`]

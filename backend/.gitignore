@@ -1,0 +1,7 @@
+# Node's modules #
+##################
+node_modules
+
+# Package dependancies #
+########################
+package-lock.json
